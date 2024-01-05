@@ -1,0 +1,23 @@
+1. props and state difference The Data is passed from one component to another. It is Immutable (cannot be modified). Props can be used with state and functional components. Props are read-only. The Data is passed within the component only. It is Mutable ( can be modified). The state can be used only with the state components/class component. The state is both read and write. 
+
+2.virtual dom in the react In React, everything is treated as a component be it a functional component or class component. A component can contain a state. Whenever the state of any component is changed react updates its Virtual DOM tree.
+
+
+ 3.
+you clicked{count} time
+
+click me 1->onetime you clicked(count-1)
+
+ 4. What is the output of below code? import { useState } from 'react'; export default function Counter() { const [counter, setCounter] = useState(5); return ( <> < span>{counter}< /span> < button onClick={ ( ) => { setCounter(counter + 5); setCounter(counter + 5); alert(counter); setCounter(counter + 5); setCounter(counter + 5); }}>Increment< /button> ) } output:5 alert:5 when to click alert btn=>ok,then count value is increse ,the dom is update ex: 10 alert :10 
+
+
+5..How do you create forms in React? React uses forms to allow users to interact with the web page. In React, form data is usually handled by the components. When the data is handled by the components, all the data is stored in the component state. You can control changes by adding event handlers in the onChange attribute and that event handler will be used to update the state of the variable. Ex:< form> < label>Input Value:< /label> < input type="text" value={inputValue} onChange={handleChange} /> < /form> < p>Input Value: {inputValue}< /p>
+
+
+ 6.Explain lifecycle methods. These methods allow you to control the component's behavior and perform specific actions at different stages of its lifecycle. A component's lifecycle has three main phases: the Mounting Phase, the Updating Phase, and the Unmounting Phase. 
+
+
+7.What is virtual dom in the react? Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory, where it does all the necessary manipulating, before making the changes in the browser DOM. React only changes what needs to be changed!
+
+
+ 8..In React, Why Is There a Need for Using Keys in Lists? Keys help React identify which items have changed (added/removed/re-ordered). To give a unique identity to every element inside the array, a key is required. To better understand this, let s refactor the code snippet we saw earlier, to now include keys.
