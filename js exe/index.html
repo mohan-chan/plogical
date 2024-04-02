@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>practice</title>
+</head>
+<body>
+    
+    <div class="inputdev">
+        <h1>javaScript Practice</h1>
+        <input type="text" id="text" placeholder="num to divded">
+        <br/>
+        <button>Submit</button>
+
+    </div>
+    
+</body>
+</html>  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Length Converter</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h2>cm to inches</h2>
+        <div class="inputdiv">
+            <input type="text" id="input" placeholder="length in cm">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert to twice</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+    <script>
+        function convert(){
+            let num=Number(document.getElementById("input").value)
+      let ans=num*2
+      let res=document.getElementById("result")
+      result.innerHTML= ans
+ }
+     
+    </script>
+</body>
+</html>
